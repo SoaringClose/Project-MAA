@@ -164,12 +164,44 @@
 
 // Проверка на число
 
-// const validNumber = Number("51"); // 51
-// console.log(Number.isNaN(validNumber)); // false
+//  const validNumber = Number("51"); // 51
+//  console.log(Number.isNaN(validNumber)); // false
 
-// const invalidNumber = Number("qweqwe"); // NaN
-// console.log(Number.isNaN(invalidNumber)); // true
+//  const invalidNumber = Number("qweqwe"); // NaN
+//  console.log(Number.isNaN(invalidNumber)); // true
 
-const validNumber1 = "dsvdzfhbfg";
-console.log(Number(validNumber1));
-console.log(Number.isNaN(validNumber1));
+//  const validNumber11 =  Number("vfgxfhf");
+
+
+//  console.log(Number.isNaN(validNumber11));
+
+
+// console.log(0.1 + 0.2 === 0.3); // false
+// console.log((0.17 + 0.24).toFixed(2)); // 0.30000000000000004
+
+
+// Math.floor(num) - возвращает наибольшее целое число,
+// меньшее, либо равное указанному
+console.log(Math.floor(1.7)); // 1
+
+// Math.ceil(num) - возвращает наименьшее целое число,
+// большее, либо равное указанному числу.
+console.log(Math.ceil(1.2)); // 2
+
+// Math.round(num) - возвращает значение числа,
+// округлённое до ближайшего целого
+console.log(Math.round(1.2)); // 1
+console.log(Math.round(1.5)); // 2
+
+// Math.max(num1, num2, ...) - возвращает наибольшее число из набора
+console.log(Math.max(20, 10, 50, 40)); // 50
+
+// Math.min(num1, num2, ...) - возвращает наименьшее число из набора
+console.log(Math.min(20, 10, 50, 40)); // 10
+
+// Math.pow(base, exponent) - возведение в степень
+console.log(Math.pow(2, 4)); // 16
+
+// Math.random() - возвращает псевдослучайное число в диапазоне [0, 1)
+console.log(Math.random()); // случайное число между 0 и 1
+console.log(Math.random() * (10 - 1) + 1); // псевдослучайное число от 1 до 10
