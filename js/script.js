@@ -1,4 +1,4 @@
-"use strict";
+
 
 // // typeof
 
@@ -182,26 +182,324 @@
 
 // Math.floor(num) - возвращает наибольшее целое число,
 // меньшее, либо равное указанному
-console.log(Math.floor(1.7)); // 1
+// console.log(Math.floor(1.7)); // 1
 
-// Math.ceil(num) - возвращает наименьшее целое число,
-// большее, либо равное указанному числу.
-console.log(Math.ceil(1.2)); // 2
+// // Math.ceil(num) - возвращает наименьшее целое число,
+// // большее, либо равное указанному числу.
+// console.log(Math.ceil(1.2)); // 2
 
-// Math.round(num) - возвращает значение числа,
-// округлённое до ближайшего целого
-console.log(Math.round(1.2)); // 1
-console.log(Math.round(1.5)); // 2
+// // Math.round(num) - возвращает значение числа,
+// // округлённое до ближайшего целого
+// console.log(Math.round(1.2)); // 1
+// console.log(Math.round(1.5)); // 2
 
-// Math.max(num1, num2, ...) - возвращает наибольшее число из набора
-console.log(Math.max(20, 10, 50, 40)); // 50
+// // Math.max(num1, num2, ...) - возвращает наибольшее число из набора
+// console.log(Math.max(20, 10, 50, 40)); // 50
 
-// Math.min(num1, num2, ...) - возвращает наименьшее число из набора
-console.log(Math.min(20, 10, 50, 40)); // 10
+// // Math.min(num1, num2, ...) - возвращает наименьшее число из набора
+// console.log(Math.min(20, 10, 50, 40)); // 10
 
-// Math.pow(base, exponent) - возведение в степень
-console.log(Math.pow(2, 4)); // 16
+// // Math.pow(base, exponent) - возведение в степень
+// console.log(Math.pow(2, 4)); // 16
 
-// Math.random() - возвращает псевдослучайное число в диапазоне [0, 1)
-console.log(Math.random()); // случайное число между 0 и 1
-console.log(Math.random() * (10 - 1) + 1); // псевдослучайное число от 1 до 10
+// // Math.random() - возвращает псевдослучайное число в диапазоне [0, 1)
+// console.log(Math.random()); // случайное число между 0 и 1
+// console.log(Math.random() * (10 - 1) + 1); // псевдослучайное число от 1 до 10
+
+// Конкатенация строк
+
+// const message = "Mango " + "is" + " happy";
+// console.log(message); // Mango is happy
+// const words = "my love " + "love me.";
+// console.log(words);
+
+// const sentense = " I love him";
+// console.log(sentense);
+
+// console.log(1 + "2"); // "12"
+// console.log(1 + "2" + 4); // "124"
+// console.log(1 + 2 + "4"); // "34"
+
+// Используя переменные необходимо составить строку с подставленными значениями
+// const guestName = "Манго";
+// const roomNumber = 207;
+// const greeting =
+//     " Welcome " + guestName + ", your room number is " + roomNumber + "!";
+// console.log(greeting); // "Welcome Mango, your room number is 207!"
+
+// const guestName = "Манго";
+// const roomNumber = 207;
+// const greeting = `Welcome ${guestName}, your room number is ${roomNumber}!`;
+// console.log(greeting); // "Welcome Mango, your room number is 207!"
+
+// // Шаблонные строки
+// console.log(`Welcome ${guestName}, your room number is ${roomNumber}!`);
+
+// Свойство length
+
+// const message = "Welcome to Bahamas!";
+// console.log(message.length); // 19
+// console.log("There is nothing impossible to him who will try".length); // 47
+// console.log("jfgkdfs  jfjlsdzfj jsskj ksdclkSdlWS;Jwoaskaka123er4 1233/".length);
+    
+//
+// const message = "WelcometoBahamas!";
+// console.log(message.indexOf("Ba")); // 9
+// console.log(message.indexOf("hello")); // -1
+
+// //
+// const productName = "Ремонтный дроид";
+// console.log(productName.includes("н")); // true
+
+
+// // Метод endsWith()
+// const jsFileName = "script.js";
+// console.log(jsFileName.endsWith(".js")); // true
+
+// const cssFileName = "styles.css";
+// console.log(cssFileName.endsWith(".js")); // false
+
+// const word = "spase";
+// console.log(word.endsWith("se"));
+// console.log(word.endsWith("de"));
+
+
+
+
+
+// Методы replace() и replaceAll()
+
+
+// const jsFileName = "script.js";
+// const minifiedJsFileName = jsFileName.replace(".js", ".min.js");
+// console.log(minifiedJsFileName); // "script.min.js"
+
+// const cssFileNames = "styles.css, about.css, portfolio.css";
+// const minifiedCssFileNames = cssFileNames.replaceAll(".css", ".min.css");
+// console.log(minifiedCssFileNames); // "styles.min.css, about.min.css, portfolio.min.css"
+
+// const motherName = "Ирина Малкина, Александра Малкина, Александр Малкин";
+// const minifiedMotherName = motherName.replaceAll("Малкина", "Malkina");
+// console.log(minifiedMotherName);
+
+
+// // Метод slice()
+// const productName = "Repair droid";
+// console.log(productName.slice(0, 4)); // "Repa"
+// console.log(productName.slice(3, 9)); // "air dr"
+// console.log(productName.slice(0, productName.length)); // "Repair droid"
+// console.log(productName.slice(7, productName.length)); // "droid"
+
+// const productName1 = "Моя любимая мама";
+// console.log(productName1.slice(1, productName1.length));
+
+//Логическое «И»
+
+// const age = 20;
+// // console.log(age > 19 && age < 22); // true && true -> true
+// console.log(age > 18 && age < 22);
+
+// console.log(true || false); // true
+// console.log(false || true); // true
+// console.log(true || true); // true
+
+// console.log(3 || false); // 3
+//  console.log(false || 3); // 3
+//  console.log(3 || true); // 3
+//  console.log(true || 3); // true
+
+//
+// const x = 5;// Missing initializer in const declaration(Отсутствует инициализатор в объявлении константы)
+// x = 10;//Assignment to constant variable. (Присвоение постоянной переменной.    )
+      
+// let x = 5;
+// x = 19;
+// console.log(x);
+
+//
+// const type =  7788;
+// console.log(typeof type);
+
+// console.log("before");
+// alert("gfhgfky");
+// console.log("after")
+
+//
+// const message = "Хотите продлить подписку?";
+// const shouldRenew = confirm(message);
+// console.log(shouldRenew);
+
+//
+// let quantity = prompt("Введите количество товаров");
+// quantity = Number(quantity);
+// console.log(quantity);
+// console.log(typeof quantity);
+
+// let elementWidth = "34.2";
+// const lementWidt = Number.parseInt(elementWidth);
+// console.log(lementWidt);
+
+// //
+// let elementHeight = "200.56px";
+// elementHeight = Number.parseFloat(elementHeight);
+// console.log("elementHeight: ", elementHeight);
+
+//
+// let salary = 1234.3456;
+// salary = Number(salary.toFixed(2));
+
+// console.log(Number(salary.toFixed(2)));
+
+// "''
+// console.log(Number(5/0));
+
+// console.log(Math.PI);
+
+// const base = 2;
+// const power = 5;
+// const result = base ** 5;
+// console.log(result);
+
+
+//
+// let base = prompt("Введите число");
+// base = Number(base);
+// console.log(base);
+
+// let power = prompt('Введите степень');
+// power = Number(power);
+// console.log(power);
+
+// let result = base ** power;
+// console.log(result);
+
+//
+// console.log(Math.random());
+
+
+// const max = 69;
+// const min = 30;
+// const result = (Math.round(Math.random() *(max - min) + min));
+// console.log(result);
+
+ 
+// const colors = ["tomato", "teal", "orange", "deeppink", "skyblue", "green"];
+// const max = colors.length - 1;
+// const min = 0;
+
+// const index = Math.round(Math.random() * (max - min) + min);
+
+// const color = colors[index];
+// console.log(color);
+
+// document.body.style.backgroundColor = color;
+
+
+// const message = "В этой строке 26 символов.";
+// console.log(message.length);
+
+
+//
+// const firstName = "Chelsy";
+// const lastName = "Emerald";
+// const fullName = firstName + " " + lastName;
+// console.log(fullName);
+// //
+// const room = 716;
+// const type = "VIP";
+// console.log(room + " " + type);
+
+//
+// let brand = prompt("Напишите название бренда");
+// brand = brand[0].toLowerCase() + brand.slice(1).toLowerCase();
+
+// console.log(brand);
+
+//
+
+// const blackListedWord1 = "спам";
+// const blackListedWord2 = "распродажа";
+
+// const string1 = "Привет, я принц абдул, єто не спам, предлагаю Тебе миллион!";
+// console.log(string1.includes(blackListedWord1));
+// console.log(string1.includes(blackListedWord2));
+
+// const string2 = "самая больщшая РАСПРОДАЖА этой недели, не пропустите!";
+// console.log(string2.includes(blackListedWord1));
+// const normalizedString2 = string2.toLowerCase()
+
+// console.log(normalizedString2.includes(blackListedWord2));
+
+// const string3 = "Рекламная компания #fatlivesmaster";
+// console.log(string3.includes(blackListedWord1));
+// console.log(string3.includes(blackListedWord2));
+
+//  Операторы сравнения
+// console.log(true > "23");
+// console.log(Number(true));
+
+
+// const isEqual = 1 !== true;
+// console.log(isEqual);
+// console.log(Number(null));
+
+
+// console.log(Boolean("0"));
+
+// console.log(0 && 6 && "hello");
+
+// console.log(false || 0 || null || false);
+
+// console.log(!"ghjjkk");
+
+// const x1 = 10;
+// const x2 = 30;
+// const number = 25;
+
+// console.log(`Число ${number} попадает в отрезок до ${x1}?`, number < x1);
+// console.log(`Число ${number} попадает в отрезок до ${x2}?`, number > x2);
+// const result = number > x1 && number < x2;
+// console.log(`Число ${number} попадает в отрезок от ${x1} до  ${x2}?`, result);
+// const  result2 = number < x1 || number > x2;
+// console.log(`Число ${number} попадает в отрезок до ${x1} или после ${x2}?`, result2);
+
+//
+// const isOnline = true;
+// const isFriend = true;
+// const isDnd = false;
+
+// const canOpenChat = isOnline && isFriend && !isDnd;
+
+
+// console.log("Можно открыть чат?", canOpenChat);
+ 
+
+// const sub1 = "free";
+
+// const canAccesContent= sub1==="pro"||sub1==="vip"
+// console.log(canAccesContent);
+
+// const salary = 1000;
+
+// if (salary < 500) {
+//     console.log("Уровень 1");
+// } else if (salary > 500){
+//     console.log("Уровень 2");
+    
+// 7.1
+
+let balance = 10000;
+const payment = 2000;
+const sentense = confirm(`Общая стоимость заказа ${balance} кредитов. Проверяем кол-во доступных средств на счету.`);
+console.log(sentense);
+
+if  (payment < balance || payment === balance) {
+    const result = balance - payment;
+    console.log(`На счету осталось  ${result}кредитов.`)
+} else (payment  > balance) {
+    console.log("На счету недостаточно средств для проведения операции!");
+}
+
+console.log(confirm("Операция завершена!");
+
+// 7.2 
